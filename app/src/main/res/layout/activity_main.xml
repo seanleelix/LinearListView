@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Something Here"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@android:color/holo_red_dark"
+            />
+
+        <sean.linearlistview.LinearListLayout
+            android:id="@+id/linear_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Something Here"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@android:color/holo_red_dark"
+            />
+
+    </LinearLayout>
+</ScrollView>
