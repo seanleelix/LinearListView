@@ -36,7 +36,7 @@ public class LinearListLayout extends LinearLayout implements View.OnClickListen
     private int dividerHeight = 0;
 
     public LinearListLayout(Context context) {
-        this(context, null, 0);
+        this(context, null);
         init();
     }
 
@@ -51,6 +51,8 @@ public class LinearListLayout extends LinearLayout implements View.OnClickListen
         if (attrs != null) {
             TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.LinearListLayout);
             dividerHeight = typedArray.getDimensionPixelSize(R.styleable.LinearListLayout_dividerHeight, 0);
+
+            typedArray.recycle();
         }
 
         init();
